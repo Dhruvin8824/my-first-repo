@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- External JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>John Doe</h1>
+        <p>Frontend Web Developer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am John, a student learning web development.
+                I am enjoying building simple web page for myself!
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website: </strong> This website you'are looking at!</li>
+                <li><strong>Simple Website: </strong> This website is build from HTML/CSS.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Student Details Form</h2>
+            <form onsubmit="saveStudentInfo(event)"> <!-- Inline Javascript -->
+                <label for="name">Name: </label> <br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required> <br> <br>
+
+                <label for="email">Email: </label> <br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required> <br> <br>
+
+                <label for="course">Course: </label> <br>
+                <input type="text" id="course" name="course" placeholder="Your Course"> <br> <br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2025 John Doe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
